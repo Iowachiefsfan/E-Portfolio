@@ -118,11 +118,10 @@ display: flex;
 
 .about-me_picture {
     width: 100px;
+    transform: 1, 2;
+}
 
 /*Improving my own picture */
-transform: scale(1.5);
-padding-top: 8px;
-}
 
 .about-me_info--title {
     margin-bottom: 16px;
