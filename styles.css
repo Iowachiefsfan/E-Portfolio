@@ -260,7 +260,7 @@ opacity: 0.7;
 
 .project:hover .project_description {
     opacity: 1;
-    transform: translateY(5px);
+    transform: translateY(-50%);
 }
 
 .project_list {
@@ -270,7 +270,7 @@ opacity: 0.7;
 .project_description {
     position: absolute;
     top:50%;
-    transform: translateY(-50%);
+    transform: translateY(100%);
     max-width: 550px;
     z-index: 3;
     opacity: 0;
@@ -291,7 +291,7 @@ opacity: 0.7;
 }
 
 .projection_description--title,
-.project_description--sub-title 
+.project_description--sub-title, 
 .project_description--para,
 .project_description--link {
     text-align: left;
@@ -304,12 +304,19 @@ footer {
     background-color: #242424;
 }
 
-.footer_row{
+.footer_social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+}
+
+.footer_row {
     padding: 8% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8% 0;
     justify-content: center;
     padding: 8% 0;
 }
@@ -320,6 +327,26 @@ footer {
 }
 
 .footer_social--link,
-.footer_copyright {
+.footer_copyright,
+.footer_logo--popper {
     color: #ffff
+}
+
+.footer_logo--popper {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer_anchor {
+   margin-bottom: 20px;
+   position: relative;
+}
+
+.footer_anchor:hover .footer_logo--popper {
+    transform: translateX(60px);
+    opacity: 1;
 }
