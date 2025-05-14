@@ -237,6 +237,22 @@ animation: fade-in 1200ms 800ms backwards;
     }
 }
 
+.wave {
+    animation: animate-wave 500ms infinite;
+}
+
+@keyframes animate-wave {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 /* TECH - STACK */
 
 .language_img {
